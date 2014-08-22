@@ -1,0 +1,50 @@
+{
+    "name": "league/factory-muffin",
+    "description": "The goal of this package is to enable the rapid creation of objects for the purpose of testing.",
+    "keywords": ["testing","factory","laravel"],
+    "homepage": "http://factory-muffin.thephpleague.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zizaco Zizuini",
+            "email": "zizaco@gmail.com"
+        },
+        {
+            "name": "Scott Robertson",
+            "email": "scottymeuk@gmail.com"
+        },
+        {
+            "name": "Graham Campbell",
+            "email": "graham@mineuk.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "fzaninotto/faker" : "1.4.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "illuminate/database": "~4.1"
+    },
+    "replace": {
+        "zizaco/factory-muff": "self.version"
+    },
+    "suggest": {
+        "illuminate/database": "Factory Muffin works well with eloquent models."
+    },
+    "autoload": {
+        "psr-4": {
+            "League\\FactoryMuffin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/AbstractTestCase.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.1-dev"
+        }
+    }
+}

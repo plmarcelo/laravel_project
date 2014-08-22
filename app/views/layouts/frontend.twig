@@ -1,0 +1,11 @@
+{% extends 'layouts.base' %}
+
+{% block head %}
+    <title>{% block title %}This is frontend!{% endblock %}</title>
+    <link href="/assets/css/frontend.min.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+    {% block content %}{% endblock %}
+    <script src="/assets/js/frontend.min.js"></script>
+{% endblock %}
